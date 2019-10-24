@@ -1,0 +1,56 @@
+﻿<link rel="stylesheet" type="text/css" href="style.css" />
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Meal Plan Survey</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Meal Plan Survey</h1>
+        <p id="description">Tell us what sort of meal plan you might be interested in. We'll get back to you ASAP with what we can do for you!</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name" id="name-label">Name: </label> <input type="text" id="name" placeholder="Name" required />
+                <label for="email" id="email-label">Email: </label> <input type="email" id="email" placeholder="moni@eversouldc.com" required />
+                <label for="phone">Phone number (optional) : </label> <input type="tel" placeholder="555-666-5555" />
+                <label for="number" id="number-label">How many meals per week (between 3 and 7): </label> <input type="number" id="number" min="3" max="7" placeholder="3" required />
+            </fieldset>
+            <fieldset>
+                <legend>Dietary Preferences</legend>
+
+                <label for="veg">Are you vegan or vegetarian?</label>
+                <select name="veg" id="dropdown">
+                    <option value="Vegan">Vegan</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Neither">Neither</option>
+                </select>
+                <br />
+                <label for="diet">Which of the following apply to your lifestyle?</label>
+                <div class="checks"><input type="checkbox" name="diet" value="gluten-free" /> Gluten-free</div>
+                <div class="checks"><input type="checkbox" name="diet" value="paleo" /> Paleo</div>
+                <div class="checks"><input type="checkbox" name="diet" value="keto" /> Keto</div>
+                <div class="checks"><input type="checkbox" name="diet" value="whole30" /> Whole 30</div>
+                <div class="checks"><input type="checkbox" name="diet" value="500cal" /> Under 500 calories</div>
+                <br />
+                <label for="allergies">Do you have any <strong>severe, life-threatening</strong> allergies? We will be contacting you personally to follow-up on this.</label>
+                <div class="radios"><input type="radio" name="allergies" value="Yes" /> Yes, I have a severe allergy I will detail below.</div>
+                <div class="radios"><input type="radio" name="allergies" value="No" /> No, I do not have any allergies.</div>
+                <div class="radios"><input type="radio" name="allergies" value="Mild" /> I have one or more mild allergies I will detail below.</div>
+                <br />
+                <label for="comments">What else would you like for us to consider?</label>
+                <textarea id="comments">Please describe, in detail, any allergies you may have. Here is a good place to detail personal preferences, ex: dislike olives, cilantro tastes like soap, etc.</textarea>
+
+                <br />
+                <input type="submit" id="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

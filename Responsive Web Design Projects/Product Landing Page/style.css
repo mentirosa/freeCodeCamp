@@ -1,0 +1,154 @@
+﻿/* Reminding me of my color palette
+
+brightest yellow: #FDEC00
+mustardy: #F4DD08
+yellow-gray: #E6CE1D
+gray: #403F45
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+    background-color: #FDEC00;
+    width: 100%;
+    margin: 0px;
+    font-family: Arimo, sans-serif;
+    position: relative;
+    top: 80px;
+}
+
+header {
+    background: #000 url('https://i.ibb.co/Vgfcndv/IMG-2546.jpg');
+    background-size: 100% auto;
+    background-position: 50% 65%;
+    color: #E6CE1D;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+main {
+    width: 70%;
+    min-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    background-color: #E6CE1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+iframe {
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+#header-img {
+    height: 100px;
+    width: auto;
+}
+
+#plans-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.topanchor {
+    position: absolute;
+    top: -80px;
+}
+
+.nav-link {
+    color: #E6CE1D;
+}
+
+.div-plans {
+    border: 1px solid black;
+    height: 225px;
+    width: calc(100% / 3);
+    margin: 25px;
+}
+
+.div-plans > h3 {
+    background-color: #000;
+    color: #E6CE1D;
+    padding: 5px;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    main {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 120px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav {
+        font-size: 2.5em;
+    }
+
+    p {
+        padding: 5px;
+    }
+}

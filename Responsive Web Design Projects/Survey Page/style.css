@@ -1,0 +1,103 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Bowlby+One+SC&display=swap');
+
+/* Font Remind
+    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Archivo Narrow', sans-serif;
+*/
+
+body {
+    background-color: #FDEC00;
+    color: black;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.3em;
+    margin-top: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    width: 60%;
+    min-width: 650px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 2em;
+}
+
+a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+nav {
+    background-color: #E6CE1D;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+legend {
+    font-weight: 700;
+}
+
+textarea {
+    width: 600px;
+    height: 100px;
+}
+
+/* smartphone optimization */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    body {
+        max-width: 100%;
+        font-size: 3em;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    form {
+        
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="submit"], select, textarea {
+        width: 100%;
+        padding: 20px;
+        font-size: 100%;
+    }
+
+    textarea {
+        height: 300px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        transform: scale(2.5);
+    }
+}
